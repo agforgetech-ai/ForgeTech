@@ -47,9 +47,91 @@ box-shadow:0 12px 28px rgba(242,103,34,.22);
 background:linear-gradient(to top,var(--branco),transparent);
 }
 
-.about,
-.services{
+.about{
 background:var(--branco);
+}
+
+.services{
+background:
+linear-gradient(135deg,rgba(15,15,15,.96),rgba(36,36,36,.94)),
+var(--grafite);
+color:#fff;
+}
+
+.services::before{
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at 16% 8%,rgba(242,103,34,.2),transparent 28%),
+repeating-linear-gradient(45deg,rgba(255,255,255,.035) 0 1px,transparent 1px 13px);
+pointer-events:none;
+}
+
+.services .container{
+position:relative;
+z-index:1;
+}
+
+.services .section-kicker{
+color:var(--laranja-claro);
+}
+
+.services h2,
+.card h3{
+color:#fff;
+}
+
+.cards{
+border-top:1px solid rgba(255,255,255,.16);
+}
+
+.card{
+grid-template-columns:112px 64px minmax(260px,.86fr) minmax(360px,1.2fr);
+gap:24px;
+align-items:start;
+min-height:auto;
+padding:38px 0;
+border-bottom:1px solid rgba(255,255,255,.16);
+}
+
+.card::before{
+grid-column:1;
+grid-row:1 / span 3;
+align-self:start;
+color:rgba(255,255,255,.2);
+}
+
+.service-icon{
+position:static;
+grid-column:2;
+grid-row:1;
+width:54px;
+height:54px;
+font-size:1.25rem;
+align-self:start;
+margin:0;
+background:var(--laranja);
+color:#fff;
+}
+
+.card h3{
+grid-column:3;
+grid-row:1 / span 3;
+margin:0;
+padding-top:4px;
+}
+
+.card p{
+grid-column:4;
+margin:0 0 12px;
+max-width:620px;
+color:rgba(255,255,255,.82);
+}
+
+.card:hover .service-icon{
+background:#fff;
+color:var(--laranja);
 }
 
 .about-box{
@@ -84,48 +166,6 @@ margin-bottom:18px;
 text-align:center;
 margin-inline:auto;
 margin-bottom:0;
-}
-
-.cards{
-border-top:1px solid var(--linha);
-}
-
-.card{
-grid-template-columns:112px 64px minmax(260px,.86fr) minmax(360px,1.2fr);
-gap:24px;
-align-items:start;
-min-height:auto;
-padding:38px 0;
-}
-
-.card::before{
-grid-column:1;
-grid-row:1 / span 3;
-align-self:start;
-}
-
-.service-icon{
-position:static;
-grid-column:2;
-grid-row:1;
-width:54px;
-height:54px;
-font-size:1.25rem;
-align-self:start;
-margin:0;
-}
-
-.card h3{
-grid-column:3;
-grid-row:1 / span 3;
-margin:0;
-padding-top:4px;
-}
-
-.card p{
-grid-column:4;
-margin:0 0 12px;
-max-width:620px;
 }
 
 .contact-form input,
