@@ -4,7 +4,7 @@
 --laranja-escuro:#b83a0b;
 --cobre:#ff9a4a;
 --texto:#171717;
---texto2:#696b70;
+--texto2:#4b5563;
 --branco:#f0eff3;
 --papel:#ffffff;
 --grafite:#171717;
@@ -245,7 +245,7 @@ color:#fff;
 }
 
 .hero p{
-color:rgba(255,255,255,.76);
+color:rgba(255,255,255,.88);
 font-size:1.12rem;
 max-width:560px;
 margin-bottom:34px;
@@ -538,9 +538,10 @@ align-items:center;
 }
 
 .section-copy p{
-font-size:1.12rem;
+font-size:1.15rem;
+line-height:1.8;
 color:var(--texto2);
-max-width:660px;
+max-width:680px;
 }
 
 .about-box{
@@ -651,7 +652,8 @@ display:none;
 
 .card p{
 color:var(--texto2);
-font-size:1rem;
+font-size:1.05rem;
+line-height:1.75;
 margin-bottom:10px;
 }
 
@@ -685,7 +687,8 @@ z-index:1;
 }
 
 .phone-copy p{
-font-size:1.08rem;
+font-size:1.12rem;
+line-height:1.8;
 color:var(--texto2);
 margin-bottom:18px;
 }
